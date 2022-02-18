@@ -1,7 +1,11 @@
-.box {
-background: rgba(255,255,255,0.1);
-box-shadow: 0 25px 45px Irgba(0,0,0,0.1);
-z-index: 10;
-padding: 20px;
-backdrop-filter: blur(25px);
-  } 
+.animatetext {
+  animation: infinite 5s infinite;
+}
+@keyframes infinite {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}

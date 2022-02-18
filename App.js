@@ -45,9 +45,14 @@ export default function App() {
 
   return (
     <View style={styles.container}>
-      <ImageBackground source={imgbg} resizeMode="cover" style={styles.image}>
+      <ImageBackground source={imgbg} blurRadius={9} resizeMode="cover" style={styles.image}>
       <View style={{marginVertical:20,alignItems:'center'}}>
-        <Text style={{fontSize:30,fontWeight:"bold",margin:20}}>הכתרה תשפ"ב</Text>
+        <View style={{borderWidth:2,borderColor:"#ffbe0b",backgroundColor:"#fff",width:"100%",shadowRadius:20,
+    shadowColor:"#00000030",
+    shadowOpacity:0.9,
+    paddingBottom:10,}}>
+        <Text style={{fontSize:30,fontWeight:"bold",margin:15,textAlign:"center",fontFamily:"Arial",color:"#000"}}>⭐ הכתרה תשפ"ב ⭐</Text>
+        </View>
         <Text style={{fontSize:18,margin:15}}>הספירה לאחור החלה!</Text>
         <Clock
         timerDays={timerDays}
@@ -63,7 +68,7 @@ export default function App() {
       </View>
       <View style={{marginVertical:20,alignItems:'center'}}>
 
-      <TouchableOpacity activeOpacity={0.7} style={styles.btn} onPress={(e)=> {window.open("https://wa.me/?text=The text to share!", "_blank");}}> 
+      <TouchableOpacity activeOpacity={0.7} style={styles.btn} onPress={(e)=> {window.open("https://wa.me/?text=%D7%94%D7%9B%D7%AA%D7%A8%D7%94%20%D7%A9%D7%9E%D7%99%D7%A0%D7%99%D7%AA%D7%A9%D7%A4%22%D7%91%2C%20%D7%94%D7%A1%D7%A4%D7%99%D7%A8%D7%94%20%D7%9C%D7%90%D7%97%D7%95%D7%A8%20%D7%94%D7%97%D7%9C%D7%94%21%0Ahttps%3A%2F%2Fcoronation2022.netlify.app%2F", "_blank");}}> 
         <View style={{display:"flex",flexDirection:"row",justifyContent:"space-evenly",alignItems:"center"}}>
         <img width="25" height="25" src={imgw}></img>
         <Text style={{color:"#fff",fontWeight:"bold"}}>שתפו עם חברים</Text>
@@ -73,10 +78,10 @@ export default function App() {
         <Text style={{fontSize:18}}>עקבו אחרינו</Text>
         <View style={styles.socialShare}>
          <a style={{backgroundColor:"#25D36",marginInline:15,color:"#fff"}} target="_blank" href='https://instagram.com/shminit_tzvia_katif' >
-         <img width="30" height="30" src={img}></img> 
+         <img width="35" height="35" src={img}></img> 
          </a>
-         <a style={{width:30,height:30,backgroundColor:"#25D36",marginRight:15,color:"#fff"}} target="_blank" href='https://youtube.com/channel/UCjYuosIDryUdGyl6QIuXJCw'>
-         <img width="30" height="30" src={img2}></img> 
+         <a style={{backgroundColor:"#25D36",marginRight:15,color:"#fff"}} target="_blank" href='https://youtube.com/channel/UCjYuosIDryUdGyl6QIuXJCw'>
+         <img width="35" height="35" src={img2}></img> 
          </a>
         </View>
       </View>

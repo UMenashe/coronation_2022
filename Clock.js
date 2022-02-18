@@ -1,7 +1,6 @@
 import React, { Fragment} from "react";
 import { StyleSheet, Text, View ,SectionList} from 'react-native';
 
-
 const Clock = ({ timerDays, timerHours, timerMinutes, timerSeconds }) => {
   return (
     <View>
@@ -41,7 +40,11 @@ const styles = StyleSheet.create({
   clock: {
     position: "relative",
     margin: 15,
-    paddingHorizontal:15,
+    paddingHorizontal:25,
+    fontFamily: 'Arial',
+    shadowRadius:20,
+    shadowColor:"#00000030",
+    shadowOpacity:0.9,
     paddingBottom:10,
     display: "flex",
     flexDirection:"row",
@@ -49,7 +52,7 @@ const styles = StyleSheet.create({
     alignItems: "center",
     fontWeight:"bold",
     color: "#00000",
-    backgroundColor:"#fff",
+    backgroundColor:"#f6f6f6",
     borderRadius: 15,
     borderWidth:1 ,
   },

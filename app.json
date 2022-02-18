@@ -26,7 +26,10 @@
       }
     },
     "web": {
-      "favicon": "./assets/favicon.png"
+      "favicon": "./assets/favicon.png",
+      "name":"הכתרה שמינית תשפב",
+      "lang":"he",
+      "description":"מחזור יא מזמין אתכם להכתרה שמינית_תשפב - הספירה לאחור החלה!"
     }
   }
 }
